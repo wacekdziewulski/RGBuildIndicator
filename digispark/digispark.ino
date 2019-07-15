@@ -110,7 +110,7 @@ void displayFadingLED() {
         fading = false;
     }
     else {
-        currentFadingStep++;
+        ++currentFadingStep;
         setColor(PIN_RED,   calculateFadingColor(PrevRed,   Red));
         setColor(PIN_GREEN, calculateFadingColor(PrevGreen, Green));
         setColor(PIN_BLUE,  calculateFadingColor(PrevBlue,  Blue));
